@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.led_on_off.led.ledControl"
+                android:background="#11666a" android:padding="10dp"
+                >
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LED Controller "
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red Led On"
+            android:id="@+id/BtnRedOn"
+            android:layout_marginTop="40dp" android:background="@drawable/buttonr" android:padding="10dp"
+            android:layout_below="@+id/textView2" android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/btnGreenOn"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red   Led  Off"
+            android:id="@+id/btnRedOff"
+            android:background="@drawable/buttonr"
+            android:padding="10dp"
+            android:layout_alignTop="@+id/BtnRedOn" android:layout_alignParentRight="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blue  Led  On"
+            android:id="@+id/BtnBlueOn"
+            android:background="@drawable/buttonb" android:padding="10dp"
+            android:layout_below="@+id/BtnRedOn" android:layout_alignParentLeft="true" android:layout_marginTop="45dp"
+            android:layout_alignRight="@+id/BtnRedOn"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blue Led Off"
+            android:id="@+id/BtnBlueOff"
+            android:background="@drawable/buttonb"
+            android:layout_above="@+id/btnGreenOn" android:layout_alignLeft="@+id/btnRedOff"
+            android:layout_alignRight="@+id/btnRedOff"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green Led On"
+            android:id="@+id/btnGreenOn"
+            android:padding="10dp" android:background="@drawable/buttong"
+            android:layout_below="@+id/BtnBlueOn" android:layout_alignParentLeft="true"
+            android:layout_marginTop="49dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green Led Off"
+            android:id="@+id/btnGreenOff" android:layout_alignTop="@+id/btnGreenOn"
+            android:layout_alignRight="@+id/BtnBlueOff" android:background="@drawable/buttong"
+            android:padding="10dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disconnect"
+            android:id="@+id/btnDisconnect"
+            android:background="@drawable/buttonr" android:padding="10dp"
+            android:layout_marginBottom="51dp" android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" android:layout_alignParentLeft="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MarksBluetooth</string>
+    <string name="btn2text">List Paired Devices</string>
+    <string name="btn1text">BlueTooth On</string>
+    <string name="btn3text">BlueTooth Off</string>
+    <string name="action_settings">Settings</string>
+</resources>
